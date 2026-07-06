@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: python /pipeline/hello.py
+      - run: python pipeline/hello.py
   build:
     needs: [test]
     runs-on: ubuntu-latest
